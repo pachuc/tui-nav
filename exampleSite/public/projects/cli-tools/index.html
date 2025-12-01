@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>CLI Tools Collection | TUI.nav</title>
+
+
+<meta name="description" content="A demo site for the TUI Nav Hugo theme">
+
+
+
+
+
+<style>
+:root {
+    --tui-bg: #0a0a0a;
+    --tui-text: #e0e0e0;
+    --tui-cursor: #00ff00;
+    --tui-cursor-blink: 1s;
+    --tui-font: "Home Video", ui-monospace, monospace;
+    --tui-content-font: "JetBrains Mono", monospace;
+}
+</style>
+
+
+<link rel="stylesheet" href="/css/fonts.css">
+<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/css/keyboard-nav.css">
+<link rel="stylesheet" href="/css/title-animation.css">
+
+
+<link rel="stylesheet" href="/css/prism.css">
+
+
+
+<script>
+window.tuiNavConfig = {
+    titleAnimationLetters: ["n","a","v"],
+    titleAnimationColors: ["#00ff00","#00ffff","#ff00ff","#ffff00","#ff6b6b"]
+};
+</script>
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+    <h1 class="keyboard-nav-title site-title">TUI.nav</h1>
+</header>
+
+
+            <div class="content">
+                
+    <main class="keyboard-nav-container">
+        <article class="post-single">
+            <h1 class="keyboard-nav-title">CLI Tools Collection</h1>
+
+            
+            <div class="post-single-meta">
+                <time datetime="2025-01-10">
+                    
+                        January 10, 2025
+                    
+                </time>
+
+                
+                <span class="post-single-tags">
+                    
+                        <a href="/tags/cli/" class="tag">#cli</a>
+                    
+                        <a href="/tags/tools/" class="tag">#tools</a>
+                    
+                </span>
+                
+            </div>
+            
+
+            <div class="post-single-content">
+                <p>A collection of command-line utilities.</p>
+<h2 id="tools">Tools</h2>
+<h3 id="json-fmt">json-fmt</h3>
+<p>Pretty-print and validate JSON:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat data.json | json-fmt
+</span></span></code></pre></div><h3 id="log-tail">log-tail</h3>
+<p>Tail logs with syntax highlighting:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>log-tail /var/log/nginx/access.log --format nginx
+</span></span></code></pre></div><h3 id="git-stats">git-stats</h3>
+<p>Repository statistics at a glance:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>git-stats --since<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;1 month ago&#34;</span>
+</span></span></code></pre></div><h2 id="installation">Installation</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cargo install cli-tools-collection
+</span></span></code></pre></div>
+            </div>
+
+            <footer class="post-single-footer">
+                <p class="nav-hint">Press <kbd>←</kbd> to go back</p>
+            </footer>
+        </article>
+    </main>
+
+            </div>
+
+            <footer class="footer">
+    
+    <p>TUI Nav Theme Demo</p>
+    
+</footer>
+
+        </div>
+
+        
+        <script src="/js/keyboard-nav.js"></script>
+        <script src="/js/global-nav.js"></script>
+        <script src="/js/title-animation.js"></script>
+        
+    </body>
+</html>

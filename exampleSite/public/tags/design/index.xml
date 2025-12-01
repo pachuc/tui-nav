@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Design on TUI.nav</title>
+    <link>http://localhost:1313/tags/design/</link>
+    <description>Recent content in Design on TUI.nav</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/design/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The Terminal Aesthetic</title>
+      <link>http://localhost:1313/posts/terminal-aesthetic/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/terminal-aesthetic/</guid>
+      <description>&lt;p&gt;Why build a website that looks like a terminal?&lt;/p&gt;&#xA;&lt;h2 id=&#34;nostalgia&#34;&gt;Nostalgia&lt;/h2&gt;&#xA;&lt;p&gt;There&amp;rsquo;s something satisfying about the simplicity of text interfaces. No distractions, just content.&lt;/p&gt;&#xA;&lt;h2 id=&#34;focus&#34;&gt;Focus&lt;/h2&gt;&#xA;&lt;p&gt;When everything is keyboard-driven, users are forced to slow down and actually read. No infinite scrolling, no algorithmic feeds.&lt;/p&gt;&#xA;&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;&#xA;&lt;p&gt;No web fonts to load. No heavy JavaScript frameworks. Just HTML, CSS, and a bit of vanilla JS.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Simplicity is the ultimate sophistication.&amp;rdquo; - Leonardo da Vinci&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

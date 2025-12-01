@@ -1,0 +1,54 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'TUI.nav'
+theme = 'tui-nav'
+
+[params]
+  description = "A demo site for the TUI Nav Hugo theme"
+  dateform = "January 2, 2006"
+  dateformShort = "Jan 2"
+
+[params.tuiNav]
+  # Colors
+  backgroundColor = "#0a0a0a"
+  textColor = "#e0e0e0"
+  cursorColor = "#00ff00"
+
+  # Fonts
+  fontFamily = '"Home Video", ui-monospace, monospace'
+  contentFontFamily = '"JetBrains Mono", monospace'
+
+  # Home page title (shown at top of homepage)
+  homeTitle = "Home"
+
+  # Title animation - animate letters in "Demo"
+  titleAnimationLetters = ["n", "a", "v"]
+  titleAnimationColors = ["#00ff00", "#00ffff", "#ff00ff", "#ffff00", "#ff6b6b"]
+
+  # Footer
+  footerText = "TUI Nav Theme Demo"
+
+  # Homepage navigation
+  [[params.tuiNav.homeItems]]
+    title = "Posts"
+    url = "/posts/"
+    description = "Blog posts"
+
+  [[params.tuiNav.homeItems]]
+    title = "Projects"
+    url = "/projects/"
+    description = "My work"
+
+  [[params.tuiNav.homeItems]]
+    title = "Writing"
+    url = "/writing/"
+    description = "Long form"
+
+  [[params.tuiNav.homeItems]]
+    title = "About"
+    url = "/about/"
+    description = "About me"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"

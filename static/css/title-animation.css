@@ -1,0 +1,55 @@
+/* Title Letter Animation - Register/Odometer Effect */
+
+/* Fixed title at top right */
+.site-title {
+    position: fixed !important;
+    top: 1rem;
+    right: 2rem;
+    z-index: 1000;
+    margin: 0;
+    font-size: 2rem;
+    text-align: right;
+    color: var(--tui-text);
+    display: block !important;
+    visibility: visible !important;
+}
+
+.keyboard-nav-title {
+    font-family: inherit;
+    position: relative;
+}
+
+.letter-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    height: 1.2em;
+    vertical-align: bottom;
+}
+
+.letter-slot {
+    display: inline-block;
+    transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Rolling animation */
+@keyframes rollUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1.2em);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.letter-rolling {
+    animation: rollUp 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Random color classes for the letters */
+.color-cycle {
+    transition: color 0.2s ease;
+}

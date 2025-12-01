@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Essay on TUI.nav</title>
+    <link>http://localhost:1313/tags/essay/</link>
+    <description>Recent content in Essay on TUI.nav</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/essay/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On Simplicity</title>
+      <link>http://localhost:1313/writing/on-simplicity/</link>
+      <pubDate>Wed, 08 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/on-simplicity/</guid>
+      <description>&lt;p&gt;In an age of infinite complexity, simplicity is a radical act.&lt;/p&gt;&#xA;&lt;p&gt;Every line of code is a liability. Every feature is maintenance. Every option is cognitive load.&lt;/p&gt;&#xA;&lt;p&gt;The best interfaces disappear. They don&amp;rsquo;t ask you to think about them. They just work.&lt;/p&gt;&#xA;&lt;p&gt;A terminal prompt. A blinking cursor. An empty page.&lt;/p&gt;&#xA;&lt;p&gt;These are invitations, not obstacles. They say: &lt;em&gt;you&amp;rsquo;re in control&lt;/em&gt;.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;The modern web forgot this. Pop-ups asking for notifications. Cookie banners. Newsletter modals. Infinite scroll designed to trap you.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>In Defense of Keyboards</title>
+      <link>http://localhost:1313/writing/keyboards/</link>
+      <pubDate>Sun, 05 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/writing/keyboards/</guid>
+      <description>&lt;p&gt;The mouse was a mistake.&lt;/p&gt;&#xA;&lt;p&gt;Not really. But hear me out.&lt;/p&gt;&#xA;&lt;p&gt;When you use a mouse, you&amp;rsquo;re constantly context-switching. Eyes scan for the target. Hand moves. Click. Eyes verify. Hand returns to keyboard.&lt;/p&gt;&#xA;&lt;p&gt;With keyboard navigation, your hands never leave home row. Your eyes can stay on the content. The interface becomes invisible.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-vim-philosophy&#34;&gt;The Vim Philosophy&lt;/h2&gt;&#xA;&lt;p&gt;Vim users know this. Modal editing seems bizarre until it clicks. Then you can&amp;rsquo;t go back.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

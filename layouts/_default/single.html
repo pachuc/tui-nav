@@ -1,0 +1,35 @@
+{{ define "main" }}
+    <main class="keyboard-nav-container">
+        <article class="post-single">
+            <h1 class="keyboard-nav-title">{{ .Title }}</h1>
+
+            {{ if not .Date.IsZero }}
+            <div class="post-single-meta">
+                <time datetime="{{ .Date.Format "2006-01-02" }}">
+                    {{ if .Site.Params.dateform }}
+                        {{ time.Format .Site.Params.dateform .Date }}
+                    {{ else }}
+                        {{ time.Format "January 2, 2006" .Date }}
+                    {{ end }}
+                </time>
+
+                {{ if .Params.tags }}
+                <span class="post-single-tags">
+                    {{ range .Params.tags }}
+                        <a href="{{ "tags/" | relURL }}{{ . | urlize }}/" class="tag">#{{ . }}</a>
+                    {{ end }}
+                </span>
+                {{ end }}
+            </div>
+            {{ end }}
+
+            <div class="post-single-content">
+                {{ .Content }}
+            </div>
+
+            <footer class="post-single-footer">
+                <p class="nav-hint">Press <kbd>←</kbd> to go back</p>
+            </footer>
+        </article>
+    </main>
+{{ end }}

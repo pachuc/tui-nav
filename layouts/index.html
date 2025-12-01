@@ -1,0 +1,24 @@
+{{ define "main" }}
+    <main class="posts keyboard-nav-container">
+        <h1 class="keyboard-nav-title">{{ .Site.Params.tuiNav.homeTitle | default "Home" }}</h1>
+
+        {{ with .Site.Params.tuiNav.qrCode }}
+        <div class="qr-code-container">
+            <img src="{{ . | relURL }}" alt="QR Code" class="qr-code">
+        </div>
+        {{ end }}
+
+        <ul class="keyboard-nav-list">
+            {{ range $index, $item := .Site.Params.tuiNav.homeItems }}
+            <li class="keyboard-nav-item" data-index="{{ $index }}" data-url="{{ $item.url }}">
+                <div class="post-item-content">
+                    <span class="post-title">{{ $item.title }}</span>
+                    <span class="post-meta">
+                        <span class="post-date">{{ $item.description }}</span>
+                    </span>
+                </div>
+            </li>
+            {{ end }}
+        </ul>
+    </main>
+{{ end }}

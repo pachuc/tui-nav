@@ -1,0 +1,60 @@
+/* Bundled Fonts */
+
+/* Home Video Font (CC0 - Public Domain)
+ * https://ggbot.itch.io/home-video-font
+ * Place HomeVideo-Regular.ttf and HomeVideo-Bold.ttf in static/fonts/
+ * Note: Bold variant has "negative style" (background boxes) - VHS timestamp aesthetic
+ */
+
+@font-face {
+    font-family: 'Home Video';
+    src: url('../fonts/HomeVideo-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Bold uses Regular to avoid the "negative" boxed style */
+@font-face {
+    font-family: 'Home Video';
+    src: url('../fonts/HomeVideo-Regular.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* JetBrains Mono (OFL License)
+ * https://www.jetbrains.com/lp/mono/
+ */
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}

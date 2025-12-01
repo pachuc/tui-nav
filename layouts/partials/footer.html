@@ -1,0 +1,5 @@
+<footer class="footer">
+    {{ with .Site.Params.tuiNav.footerText }}
+    <p>{{ . | safeHTML }}</p>
+    {{ end }}
+</footer>

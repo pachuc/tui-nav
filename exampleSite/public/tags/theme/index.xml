@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Theme on TUI.nav</title>
+    <link>http://localhost:1313/tags/theme/</link>
+    <description>Recent content in Theme on TUI.nav</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 15 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/theme/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TUI Nav Theme</title>
+      <link>http://localhost:1313/projects/tui-nav/</link>
+      <pubDate>Wed, 15 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/tui-nav/</guid>
+      <description>&lt;p&gt;A terminal-inspired Hugo theme with keyboard navigation.&lt;/p&gt;&#xA;&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Keyboard-first navigation&lt;/li&gt;&#xA;&lt;li&gt;Carousel view with 5-item window&lt;/li&gt;&#xA;&lt;li&gt;Animated title letters&lt;/li&gt;&#xA;&lt;li&gt;Built-in code highlighting&lt;/li&gt;&#xA;&lt;li&gt;System monospace fonts&lt;/li&gt;&#xA;&lt;li&gt;Dark terminal aesthetic&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;tech-stack&#34;&gt;Tech Stack&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Hugo static site generator&lt;/li&gt;&#xA;&lt;li&gt;Vanilla JavaScript&lt;/li&gt;&#xA;&lt;li&gt;CSS custom properties&lt;/li&gt;&#xA;&lt;li&gt;Prism.js for syntax highlighting&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#&#34;&gt;GitHub Repository&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>

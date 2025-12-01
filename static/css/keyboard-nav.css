@@ -1,0 +1,220 @@
+/* Keyboard Navigation Styles - Carousel View */
+
+/* Matte black background */
+body,
+body * {
+    background-color: var(--tui-bg) !important;
+    color: var(--tui-text);
+}
+
+body {
+    padding-top: 0;
+    margin: 0;
+}
+
+/* Header takes no space - its content is position:fixed */
+.header {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+}
+
+/* Content wrapper - no spacing */
+.content {
+    margin: 0;
+    padding: 0;
+}
+
+/* Consistent container for all pages */
+.keyboard-nav-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 8rem 1rem 2rem;
+    min-height: calc(100vh - 4rem);
+}
+
+/* Page title - at the top */
+.keyboard-nav-title {
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+/* QR Code styling - optional, appears below title */
+.qr-code-container {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.qr-code {
+    max-width: 12rem;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+.keyboard-nav-instructions {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+    opacity: 0.6;
+}
+
+.keyboard-nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Hide all items by default */
+.keyboard-nav-item {
+    display: none;
+    padding: 1.25rem 2rem;
+    pointer-events: none;
+    transition: background-color 0.15s ease, opacity 0.4s ease;
+    position: relative;
+    width: 100%;
+    opacity: 0;
+}
+
+/* Show only visible items */
+.keyboard-nav-item.visible {
+    display: block;
+    opacity: 1;
+}
+
+/* Fade effect for distant items */
+.keyboard-nav-item.fade-top,
+.keyboard-nav-item.fade-bottom {
+    opacity: 0.3;
+}
+
+/* Middle items (one position away from selected) */
+.keyboard-nav-item.fade-middle {
+    opacity: 0.6;
+}
+
+/* Default item styling */
+.keyboard-nav-item {
+    background: transparent;
+}
+
+/* Subtle terminal cursor on the left side */
+.keyboard-nav-item.selected {
+    background: transparent;
+    opacity: 1 !important;
+    position: relative;
+}
+
+/* Cursor bar on the left */
+.keyboard-nav-item.selected::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 60%;
+    background: var(--tui-cursor);
+    box-shadow: 0 0 10px color-mix(in srgb, var(--tui-cursor) 50%, transparent);
+}
+
+/* Post content within items */
+.post-item-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.keyboard-nav-item .post-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    font-size: 0.875rem;
+    opacity: 0.7;
+    flex-wrap: wrap;
+}
+
+.post-tags {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* Pagination */
+.keyboard-nav-pagination {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    opacity: 0.6;
+}
+
+/* Remove focus outline - using terminal cursor instead */
+.keyboard-nav-item:focus-visible {
+    outline: none;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .keyboard-nav-item {
+        padding: 1rem 1.25rem;
+    }
+
+    .keyboard-nav-item .post-title {
+        font-size: 1.1rem;
+    }
+
+    .keyboard-nav-instructions {
+        font-size: 0.75rem;
+        padding: 0 1rem;
+    }
+
+    .post-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+}
+
+/* Terminal cursor blink animation */
+@keyframes cursorBlink {
+    0%, 49% {
+        opacity: 1;
+    }
+    50%, 100% {
+        opacity: 0.3;
+    }
+}
+
+.keyboard-nav-item.selected::before {
+    animation: cursorBlink var(--tui-cursor-blink) ease-in-out infinite;
+}
+
+/* Slide in animation for appearing items */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.keyboard-nav-item.visible {
+    animation: slideIn 0.3s ease;
+}

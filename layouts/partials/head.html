@@ -1,0 +1,43 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+{{ with .Site.Params.description }}
+<meta name="description" content="{{ . }}">
+{{ end }}
+
+{{ with .Site.Params.keywords }}
+<meta name="keywords" content="{{ . }}">
+{{ end }}
+
+<!-- CSS Variables from config -->
+<style>
+:root {
+    --tui-bg: {{ .Site.Params.tuiNav.backgroundColor | default "#0a0a0a" }};
+    --tui-text: {{ .Site.Params.tuiNav.textColor | default "#e0e0e0" }};
+    --tui-cursor: {{ .Site.Params.tuiNav.cursorColor | default "#00ff00" }};
+    --tui-cursor-blink: {{ .Site.Params.tuiNav.cursorBlinkSpeed | default "1s" }};
+    --tui-font: {{ .Site.Params.tuiNav.fontFamily | default `ui-monospace, "Cascadia Code", "Source Code Pro", Menlo, Consolas, "DejaVu Sans Mono", monospace` | safeCSS }};
+    --tui-content-font: {{ .Site.Params.tuiNav.contentFontFamily | default `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif` | safeCSS }};
+}
+</style>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/main.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/keyboard-nav.css" | relURL }}">
+<link rel="stylesheet" href="{{ "css/title-animation.css" | relURL }}">
+
+{{ if or .IsPage (eq .Kind "term") }}
+<link rel="stylesheet" href="{{ "css/prism.css" | relURL }}">
+{{ end }}
+
+<!-- Title animation config -->
+<script>
+window.tuiNavConfig = {
+    titleAnimationLetters: {{ .Site.Params.tuiNav.titleAnimationLetters | default (slice "a" "r" "t") | jsonify | safeJS }},
+    titleAnimationColors: {{ .Site.Params.tuiNav.titleAnimationColors | default (slice "#00ff00" "#00ffff" "#ff00ff" "#ffff00") | jsonify | safeJS }}
+};
+</script>

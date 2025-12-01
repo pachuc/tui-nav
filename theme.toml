@@ -1,0 +1,14 @@
+# TUI Nav - Terminal-inspired keyboard-navigable Hugo theme
+
+name = "TUI Nav"
+license = "MIT"
+licenselink = "https://opensource.org/licenses/MIT"
+description = "A terminal-inspired, keyboard-navigable Hugo theme with carousel navigation"
+homepage = "https://github.com/pachuc/tui-nav"
+tags = ["tui", "terminal", "keyboard", "minimal", "dark", "blog", "monospace"]
+features = ["keyboard navigation", "dark theme", "code highlighting", "responsive"]
+min_version = "0.1.0"
+
+[author]
+  name = "pachuc"
+  homepage = "https://pachu.me"

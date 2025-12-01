@@ -1,0 +1,41 @@
+{{ define "main" }}
+    {{ $paginator := .Paginate .Data.Pages }}
+
+    <main class="posts keyboard-nav-container">
+        <h1 class="keyboard-nav-title">{{ .Title }}</h1>
+
+        <ul class="keyboard-nav-list">
+            {{ $index := 0 }}
+            {{ range $paginator.Pages }}
+                <li class="keyboard-nav-item" data-index="{{ $index }}" data-url="{{ .Permalink }}">
+                    <div class="post-item-content">
+                        <span class="post-title">{{ .Title }}</span>
+                        <span class="post-meta">
+                            <span class="post-date">
+                                {{ if .Site.Params.dateformShort }}
+                                    {{ time.Format .Site.Params.dateformShort .Date }}
+                                {{ else }}
+                                    {{ time.Format "Jan 2, 2006" .Date }}
+                                {{ end }}
+                            </span>
+                            {{ if .Params.tags }}
+                                <span class="post-tags">
+                                    {{ range first 3 .Params.tags }}
+                                        <span class="tag">#{{ . }}</span>
+                                    {{ end }}
+                                </span>
+                            {{ end }}
+                        </span>
+                    </div>
+                </li>
+                {{ $index = add $index 1 }}
+            {{ end }}
+        </ul>
+
+        {{ if gt $paginator.TotalPages 1 }}
+        <div class="keyboard-nav-pagination">
+            Page {{ $paginator.PageNumber }} of {{ $paginator.TotalPages }}
+        </div>
+        {{ end }}
+    </main>
+{{ end }}
