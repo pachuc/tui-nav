@@ -6,14 +6,14 @@
     <description>Recent content in Tui on TUI.nav</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="http://localhost:1313/tags/tui/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>The Terminal Aesthetic</title>
       <link>http://localhost:1313/posts/terminal-aesthetic/</link>
-      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/terminal-aesthetic/</guid>
-      <description>&lt;p&gt;Why build a website that looks like a terminal?&lt;/p&gt;&#xA;&lt;h2 id=&#34;nostalgia&#34;&gt;Nostalgia&lt;/h2&gt;&#xA;&lt;p&gt;There&amp;rsquo;s something satisfying about the simplicity of text interfaces. No distractions, just content.&lt;/p&gt;&#xA;&lt;h2 id=&#34;focus&#34;&gt;Focus&lt;/h2&gt;&#xA;&lt;p&gt;When everything is keyboard-driven, users are forced to slow down and actually read. No infinite scrolling, no algorithmic feeds.&lt;/p&gt;&#xA;&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;&#xA;&lt;p&gt;No web fonts to load. No heavy JavaScript frameworks. Just HTML, CSS, and a bit of vanilla JS.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Simplicity is the ultimate sophistication.&amp;rdquo; - Leonardo da Vinci&lt;/p&gt;</description>
+      <description>&lt;p&gt;Why build a website that looks like a terminal?&lt;/p&gt;&#xA;&lt;h2 id=&#34;nostalgia&#34;&gt;Nostalgia&lt;/h2&gt;&#xA;&lt;p&gt;There&amp;rsquo;s something satisfying about the simplicity of text interfaces. No distractions, just content.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;ldquo;Simplicity is the ultimate sophistication.&amp;rdquo; - Leonardo da Vinci&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;h2 id=&#34;speed&#34;&gt;Speed&lt;/h2&gt;&#xA;&lt;p&gt;Keyboard nav feels snappy and fun.&lt;/p&gt;&#xA;&lt;h2 id=&#34;the-cursor&#34;&gt;The Cursor&lt;/h2&gt;&#xA;&lt;p&gt;The blinking green cursor is iconic. It says &amp;ldquo;I&amp;rsquo;m ready. What&amp;rsquo;s next?&amp;rdquo;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;█&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;That&amp;rsquo;s all you need.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

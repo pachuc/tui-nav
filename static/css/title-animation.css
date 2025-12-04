@@ -23,12 +23,16 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-    height: 1.2em;
-    vertical-align: bottom;
+    height: 1em;
+    line-height: inherit;
+    vertical-align: baseline;
+    top: 1em;
 }
 
 .letter-slot {
     display: inline-block;
+    line-height: 1;
+    vertical-align: top;
     transition: transform 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
@@ -38,7 +42,7 @@
         transform: translateY(0);
     }
     50% {
-        transform: translateY(-1.2em);
+        transform: translateY(-1em);
     }
     100% {
         transform: translateY(0);

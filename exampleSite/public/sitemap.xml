@@ -2,22 +2,49 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/tags/code/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/code-highlighting/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/css/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/demo/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/design/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/posts/getting-started/</loc>
-    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/hugo/</loc>
-    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/terminal-aesthetic/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/customization/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tui/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/tutorial/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/projects/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/theme/</loc>
@@ -25,33 +52,6 @@
   </url><url>
     <loc>http://localhost:1313/projects/tui-nav/</loc>
     <lastmod>2025-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tutorial/</loc>
-    <lastmod>2025-01-15T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/code/</loc>
-    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/code-highlighting/</loc>
-    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/demo/</loc>
-    <lastmod>2025-01-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/design/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/terminal-aesthetic/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/tui/</loc>
-    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/css/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/customization/</loc>
-    <lastmod>2025-01-12T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/cli/</loc>
     <lastmod>2025-01-10T00:00:00+00:00</lastmod>
