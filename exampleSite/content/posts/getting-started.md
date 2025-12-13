@@ -4,7 +4,7 @@ date: 2025-11-30
 tags: ["tutorial", "hugo"]
 ---
 
-Welcome to **TUI Nav**, a terminal-inspired Hugo theme.
+Welcome to **TUI Nav**, a terminal-inspired Hugo theme. Check out the [Hugo documentation](https://gohugo.io/documentation/) to learn more about building sites with Hugo.
 
 ## Installation
 

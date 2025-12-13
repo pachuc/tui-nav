@@ -42,6 +42,11 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Content links - matrix green */
+.post-single-content a {
+    color: var(--tui-cursor) !important;
+}
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
