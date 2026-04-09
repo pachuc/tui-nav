@@ -189,6 +189,19 @@ body {
     }
 }
 
+/* Touch device support - enable tap navigation */
+@media (pointer: coarse) {
+    .keyboard-nav-item.visible {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    /* Tap feedback */
+    .keyboard-nav-item.visible:active {
+        background: color-mix(in srgb, var(--tui-cursor) 15%, transparent);
+    }
+}
+
 /* Terminal cursor blink animation */
 @keyframes cursorBlink {
     0%, 49% {

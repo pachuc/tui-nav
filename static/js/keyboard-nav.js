@@ -163,16 +163,82 @@
   }
 
   /**
+   * Check if device supports touch
+   */
+  function isTouchDevice() {
+    return window.matchMedia('(pointer: coarse)').matches;
+  }
+
+  /**
+   * Navigate to a specific item's URL
+   */
+  function navigateToItem(item) {
+    const url = item.getAttribute('data-url');
+    if (url) {
+      window.location.href = url;
+    }
+  }
+
+  /**
+   * Set up touch event handlers for swipe gestures and tap navigation
+   */
+  function initTouchNavigation() {
+    let touchStartY = 0;
+    let touchEndY = 0;
+    const swipeThreshold = 50; // Minimum distance for a swipe
+
+    // Handle swipe gestures on the nav list
+    navList.addEventListener('touchstart', function(e) {
+      touchStartY = e.changedTouches[0].screenY;
+    }, { passive: true });
+
+    navList.addEventListener('touchend', function(e) {
+      touchEndY = e.changedTouches[0].screenY;
+      handleSwipe();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const diff = touchStartY - touchEndY;
+
+      if (Math.abs(diff) < swipeThreshold) {
+        // Not a swipe, it's a tap - handled by click event
+        return;
+      }
+
+      if (diff > 0) {
+        // Swipe up - move down in the list
+        updateSelection(currentIndex + 1);
+      } else {
+        // Swipe down - move up in the list
+        updateSelection(currentIndex - 1);
+      }
+    }
+
+    // Handle tap on items - navigate directly
+    items.forEach(function(item) {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        navigateToItem(item);
+      });
+    });
+  }
+
+  /**
    * Initialize keyboard navigation
    */
   function init() {
     // Set up keyboard event listener
     document.addEventListener('keydown', handleKeydown);
 
+    // Set up touch navigation on touch devices
+    if (isTouchDevice()) {
+      initTouchNavigation();
+    }
+
     // Initialize with first item selected
     updateSelection(0);
 
-    console.log('Keyboard-only carousel navigation initialized:', items.length, 'posts (showing 5 at a time)');
+    console.log('Carousel navigation initialized:', items.length, 'posts (showing 5 at a time)');
   }
 
   // Initialize when DOM is ready
