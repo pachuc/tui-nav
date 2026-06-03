@@ -1,8 +1,11 @@
 /* Keyboard Navigation Styles - Carousel View */
 
 /* Matte black background */
+/* Exempt elements that set their own background (see main.css): inline code
+   highlight, code blocks, kbd chips, table headers. Everything else is still
+   forced to matte black. */
 body,
-body * {
+body *:not(code, kbd, pre, th) {
     background-color: var(--tui-bg) !important;
     color: var(--tui-text);
 }
