@@ -76,7 +76,8 @@ li {
 
 /* Code */
 code {
-    font-family: inherit;
+    font-family: var(--tui-code-font);
+    color: var(--tui-code-color);
     background: rgba(255, 255, 255, 0.1);
     padding: 0.125rem 0.375rem;
     border-radius: 3px;
@@ -94,6 +95,7 @@ pre {
 
 pre code {
     background: none;
+    color: inherit;
     padding: 0;
     font-size: 0.875rem;
 }
@@ -190,7 +192,7 @@ kbd {
 /* Keep code blocks in monospace */
 .post-single-content code,
 .post-single-content pre {
-    font-family: var(--tui-font);
+    font-family: var(--tui-code-font);
 }
 
 .post-single-content h2 {
