@@ -43,3 +43,5 @@ window.tuiNavConfig = {
     titleAnimationColors: {{ .Site.Params.tuiNav.titleAnimationColors | default (slice "#00ff00" "#00ffff" "#ff00ff" "#ffff00") | jsonify | safeJS }}
 };
 </script>
+
+{{ partial "extend-head.html" . }}

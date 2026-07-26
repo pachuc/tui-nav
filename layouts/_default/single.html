@@ -23,9 +23,13 @@
             </div>
             {{ end }}
 
+            {{ partial "single-after-meta.html" . }}
+
             <div class="post-single-content">
                 {{ .Content }}
             </div>
+
+            {{ partial "single-after-content.html" . }}
 
             <footer class="post-single-footer">
                 <p class="nav-hint">Press <kbd>←</kbd> to go back</p>
